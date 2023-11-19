@@ -1,0 +1,24 @@
+{
+  "name": "base_react_app_backend",
+  "version": "0.0.1",
+  "description": "Basic express application for my basic react app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "github.com/aiutopcamico/base_react_app_backend"
+  },
+  "author": "AiutoPcAmico",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.2",
+    "nodemon": "^3.0.1"
+  },
+  "type": "module"
+}
