@@ -2,11 +2,13 @@
   {
     "username": "andrea",
     "password": "password",
-    "email": "example1@example.com"
+    "email": "example1@example.com",
+    "fidelityCard": 234643
   },
   {
     "username": "pippo",
     "password": "dog",
-    "email": "dog@bau.dog"
+    "email": "dog@bau.dog",
+    "fidelityCard": 93847388
   }
 ]

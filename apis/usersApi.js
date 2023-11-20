@@ -5,10 +5,17 @@ var usersArray = users;
 
 async function apiPutUser(req, res) {
   console.log("\n[PUT] Adding a user");
-  if (!req.body?.username || !req.body?.password || !req.body?.email) {
+  if (
+    !req.body?.username ||
+    !req.body?.password ||
+    !req.body?.email ||
+    !req.body?.fidelityCard
+  ) {
     res
       .status(400)
-      .send("Please, provide username, password and email address!");
+      .send(
+        "Please, provide username, password, email address and fidelity card!"
+      );
   } else {
     try {
       //if I have all required elements
@@ -16,9 +23,10 @@ async function apiPutUser(req, res) {
         username: req.body.username,
         password: req.body.password,
         email: req.body.email,
+        fidelityCard: req.body.fidelityCard,
       });
 
-      res.status(201).send({ data: "Users added!", error: false });
+      res.status(201).send({ data: "User added!", error: false });
     } catch (error) {
       res
         .status(500)
