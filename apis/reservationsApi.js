@@ -1,6 +1,6 @@
 import reservations from "../data/reservations.json" assert { type: "json" };
 import { makeId } from "../utils/makeId.js";
-import { apiCourseDetail } from "./coursesApi.js";
+import { apiCourseDetail, reduceSeats } from "./coursesApi.js";
 import { apiGetGymDetails } from "./gymsApi.js";
 var localReservations = reservations;
 
@@ -45,6 +45,9 @@ async function apiPutReservation(req, res) {
         id: makeId(4),
       });
 
+      //i reduce the seats
+      //not yet tested completely
+      //await reduceSeats(req.body.idCourse);
       res.status(201).send({ data: "reservation added!", error: false });
     } catch (error) {
       res
