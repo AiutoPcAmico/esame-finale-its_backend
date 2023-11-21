@@ -1,10 +1,7 @@
 import express from "express";
 import { apiPostLogin } from "../apis/loginApi.js";
-import { apiGetAllProvince } from "../apis/provinceApi.js";
 import { apiPutUser } from "../apis/usersApi.js";
 import { authenticateToken } from "./authMiddleware.js";
-import { apiGetAllMarkets } from "../apis/marketsApi.js";
-import { apiGetAllProducts } from "../apis/productsApi.js";
 import { apiGetAllCourses } from "../apis/coursesApi.js";
 import { apiGetAllGyms } from "../apis/gymsApi.js";
 import {
@@ -36,9 +33,6 @@ router.put("/users/add", apiPutUser);
  *       GENERAL DATA ROUTES
  *     ----------------------
  */
-router.get("/province/getall", authenticateToken, apiGetAllProvince);
-router.get("/markets/getAll", authenticateToken, apiGetAllMarkets);
-router.get("/products/getAll", authenticateToken, apiGetAllProducts);
 router.get("/courses/getAll", authenticateToken, apiGetAllCourses);
 router.get("/gyms/getAll", authenticateToken, apiGetAllGyms);
 router.get("/reservations/getAll", authenticateToken, apiGetAllReservations);
