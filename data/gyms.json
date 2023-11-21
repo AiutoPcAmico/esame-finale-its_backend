@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "name": "Sportiva SRL",
+    "location": "Via del pascolo 23, Cividate Camuno",
+    "typology": "corsi serali"
+  },
+  {
+    "id": 2,
+    "name": "Movimentus SRL",
+    "location": "Via della forza 10, Darfo Boario Terme",
+    "typology": "corsi serali"
+  },
+  {
+    "id": 3,
+    "name": "Gym SpA",
+    "location": "Via del cuoio 23, Milano",
+    "typology": "corsi diurni"
+  },
+  {
+    "id": 4,
+    "name": "BodyOK special",
+    "location": "Via del collegio 88, Cemmo",
+    "typology": "corsi full-day"
+  },
+  {
+    "id": 5,
+    "name": "MovimentoSano Srls",
+    "location": "Via ombrosa 10, Savona",
+    "typology": "corsi serali"
+  }
+]

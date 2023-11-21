@@ -1,0 +1,23 @@
+[
+  {
+    "id": "pre",
+    "name": "Corso base agonistico",
+    "dateTime": "21/11/2023 - 11.20",
+    "duration": 180,
+    "available": 6
+  },
+  {
+    "id": "pil",
+    "name": "Corso di pilates",
+    "dateTime": "10/12/2023 - 21.40",
+    "duration": 60,
+    "available": 4
+  },
+  {
+    "id": "tot",
+    "name": "Corso total",
+    "dateTime": "15/01/2024 - 10.20",
+    "duration": 300,
+    "available": 60
+  }
+]

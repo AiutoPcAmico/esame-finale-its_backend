@@ -5,6 +5,12 @@ import { apiPutUser } from "../apis/usersApi.js";
 import { authenticateToken } from "./authMiddleware.js";
 import { apiGetAllMarkets } from "../apis/marketsApi.js";
 import { apiGetAllProducts } from "../apis/productsApi.js";
+import { apiGetAllCourses } from "../apis/coursesApi.js";
+import { apiGetAllGyms } from "../apis/gymsApi.js";
+import {
+  apiGetAllReservations,
+  apiPutReservation,
+} from "../apis/reservationsApi.js";
 
 const router = express.Router();
 
@@ -33,5 +39,9 @@ router.put("/users/add", apiPutUser);
 router.get("/province/getall", authenticateToken, apiGetAllProvince);
 router.get("/markets/getAll", authenticateToken, apiGetAllMarkets);
 router.get("/products/getAll", authenticateToken, apiGetAllProducts);
+router.get("/courses/getAll", authenticateToken, apiGetAllCourses);
+router.get("/gyms/getAll", authenticateToken, apiGetAllGyms);
+router.get("/reservations/getAll", authenticateToken, apiGetAllReservations);
+router.put("/reservations/add", authenticateToken, apiPutReservation);
 
 export { router };

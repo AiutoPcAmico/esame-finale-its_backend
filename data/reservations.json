@@ -1,0 +1,14 @@
+[
+  {
+    "id": 1,
+    "user": "andrea",
+    "idGym": 2,
+    "idCourse": "tot"
+  },
+  {
+    "id": 2,
+    "user": "pippo",
+    "idGym": 1,
+    "idCourse": "pre"
+  }
+]
